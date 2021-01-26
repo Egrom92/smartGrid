@@ -1,0 +1,42 @@
+.anim(@time: .3s){
+  transition: @time ease-out all;
+}
+.center-gor(){
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.center-vert(){
+  left: 50%;
+  transform: translate(-50%);
+}
+.center(){
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+.indent(@n){
+  @val: (@break_lg - @fields * 2) / @columns * @n;
+  margin-left: ~"calc(@{val} + @{offset_one_side})";
+  margin-right: ~"calc(@{val} + @{offset_one_side})";
+}
+
+.indent-left(@n){
+  @val: (@break_lg - @fields * 2) / @columns * @n;
+  margin-left: ~"calc(@{val} + @{offset_one_side})";
+}
+
+.indent-right(@n){
+  @val: (@break_lg - @fields * 2) / @columns * @n;
+  margin-right: ~"calc(@{val} + @{offset_one_side})";
+}
+
+
+.gap(@n){
+  @val: (@break_lg - @fields * 2) / @columns * @n;
+  width: ~"calc(@{val} + @{offset_one_side})";
+}

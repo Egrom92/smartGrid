@@ -1,0 +1,10 @@
+menu:
+  -
+    link: '#'
+    name: 'Home'
+  -
+    link: '#'
+    name: 'Blog'
+  -
+    link: '#'
+    name: 'Contact'
