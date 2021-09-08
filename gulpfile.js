@@ -151,7 +151,12 @@ function fonts(){
 // }
 
 function js() {
-	return gulp.src(['./src/assets/js/smooth-scroll.min.js', './src/assets/js/default.js', './src/assets/js/dev.js'])
+	return gulp.src([
+		'./src/assets/js/smooth-scroll.min.js', 
+		'./src/assets/js/lib/helpers.js',
+		'./src/assets/js/default.js', 
+		'./src/assets/js/dev.js'
+	])
 		.pipe(gulpif(isDev, sourcemaps.init()))
 		.pipe(gulpif(isProd, jsImport({
 			hideConsole: true
