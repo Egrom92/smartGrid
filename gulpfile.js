@@ -152,8 +152,8 @@ function fonts(){
 
 function js() {
 	return gulp.src([
-		'./src/assets/js/smooth-scroll.min.js', 
-		'./src/assets/js/lib/helpers.js',
+		'./src/assets/js/libs/smooth-scroll.min.js',
+		'./src/assets/js/libs/helpers.js',
 		'./src/assets/js/default.js', 
 		'./src/assets/js/dev.js'
 	])
@@ -188,7 +188,7 @@ function watch(){
 	gulp.watch('./src/template/data/*.yml', html);
 	gulp.watch('./src/assets/ico/**', icon);
 	gulp.watch('./src/assets/fonts/**', fonts);
-	gulp.watch('./src/assets/js/*.js', js);
+	gulp.watch('./src/assets/js/**/*.js', js);
 	gulp.watch('./smartgrid.js', grid);
 	gulp.watch('./src/assets/img/**', img);
 	gulp.watch('./src/**/*.less', styles);
